@@ -46,22 +46,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func submitBackgroundTasks() {
         // Declared at the "Permitted background task scheduler identifiers" in info.plist
         do {
-          let backgroundAppRefreshTaskRequest = BGAppRefreshTaskRequest(identifier: backgroundAppDcDetectorTaskSchedulerIdentifier)
-          backgroundAppRefreshTaskRequest.earliestBeginDate = Date(timeIntervalSinceNow: 0)
-          try BGTaskScheduler.shared.submit(backgroundAppRefreshTaskRequest)
-          print("Submitted task request")
+            let backgroundAppRefreshTaskRequest = BGAppRefreshTaskRequest(identifier: backgroundAppDcDetectorTaskSchedulerIdentifier)
+            backgroundAppRefreshTaskRequest.earliestBeginDate = Date(timeIntervalSinceNow: 0)
+            try BGTaskScheduler.shared.submit(backgroundAppRefreshTaskRequest)
+            print("Submitted task request")
+            runConnectionDetectTask()
         } catch {
-          print("Failed to submit BGTask")
+            print("Failed to submit BGTask")
         }
         
-      }
+    }
     
     private func runConnectionDetectTask() {
         if let vc = window?.rootViewController as? ViewController {
             if(!InternetConnection.isConnectedToNetwork()) {
                 // Disconnect detected
                 print("disconnect detected")
-                //vc.addEvent(event: Event())
+                vc.addEvent(event: Event())
             }
         }
     }

@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E045FBE5-579A-48D3-AE79-AD48FD8204FC"
+            uuid = "31EB31E8-910A-41AE-BDA4-5E58C8AEE1E5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "disconnectdDataCollector/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "submitBackgroundTasks()"
             landmarkType = "7">
          </BreakpointContent>

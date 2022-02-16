@@ -22,8 +22,6 @@ class ViewController: UIViewController, ChartViewDelegate {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 self.setupChart()
-                self.addEvent(event: Event())
-
             }
         }
     }
@@ -59,11 +57,7 @@ class ViewController: UIViewController, ChartViewDelegate {
             }
         }
     }
-    
-    private func testConnection() -> Bool{
-        return false
-    }
-    
+        
     // MARK: Visualizing Data
     private func transformToBarChartDataEntry(index: Int ,event: Event) -> BarChartDataEntry {
         return BarChartDataEntry(x: Double(index), y: Double(event.count))

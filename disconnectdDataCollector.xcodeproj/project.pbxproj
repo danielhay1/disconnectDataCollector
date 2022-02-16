@@ -18,20 +18,23 @@
 		B71449CA27B94B0B00C282E9 /* disconnectdD_ataCollectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449C927B94B0B00C282E9 /* disconnectdD_ataCollectorUITestsLaunchTests.swift */; };
 		B71449F427B94BCA00C282E9 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449F327B94BCA00C282E9 /* Database.swift */; };
 		B71449F727B94C1A00C282E9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449F627B94C1A00C282E9 /* Event.swift */; };
-		B7144A1827B96E2400C282E9 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = B7144A1727B96E2400C282E9 /* SQLite */; };
-		B79AC4FF27BBF4E20016F5A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449AA27B94B0900C282E9 /* ViewController.swift */; };
-		B79AC50027BBF4E20016F5A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449A627B94B0900C282E9 /* AppDelegate.swift */; };
-		B79AC50127BBF4E20016F5A3 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449F327B94BCA00C282E9 /* Database.swift */; };
-		B79AC50227BBF4E20016F5A3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E20DB227BA76BA0087E4B4 /* TableViewCell.swift */; };
-		B79AC50327BBF4E20016F5A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449A827B94B0900C282E9 /* SceneDelegate.swift */; };
-		B79AC50427BBF4E20016F5A3 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449F627B94C1A00C282E9 /* Event.swift */; };
-		B79AC50627BBF4E20016F5A3 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = B79AC4FC27BBF4E20016F5A3 /* SQLite */; };
-		B79AC50827BBF4E20016F5A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71449B127B94B0A00C282E9 /* LaunchScreen.storyboard */; };
-		B79AC50927BBF4E20016F5A3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E20DB327BA76BA0087E4B4 /* TableViewCell.xib */; };
-		B79AC50A27BBF4E20016F5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71449AF27B94B0A00C282E9 /* Assets.xcassets */; };
-		B79AC50B27BBF4E20016F5A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71449AC27B94B0900C282E9 /* Main.storyboard */; };
-		B79AC51227BC23930016F5A3 /* InternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79AC51127BC23930016F5A3 /* InternetConnection.swift */; };
-		B79AC51527BC34640016F5A3 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = B79AC51427BC34640016F5A3 /* Charts */; };
+		B788403A27BD6D3E007A2301 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = B788403927BD6D3E007A2301 /* SQLite */; };
+		B788403D27BD6D5C007A2301 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = B788403C27BD6D5C007A2301 /* Charts */; };
+		B788404427BD6DA1007A2301 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449AA27B94B0900C282E9 /* ViewController.swift */; };
+		B788404527BD6DA1007A2301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449A627B94B0900C282E9 /* AppDelegate.swift */; };
+		B788404627BD6DA1007A2301 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449F327B94BCA00C282E9 /* Database.swift */; };
+		B788404727BD6DA1007A2301 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E20DB227BA76BA0087E4B4 /* TableViewCell.swift */; };
+		B788404827BD6DA1007A2301 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449A827B94B0900C282E9 /* SceneDelegate.swift */; };
+		B788404A27BD6DA1007A2301 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71449F627B94C1A00C282E9 /* Event.swift */; };
+		B788404C27BD6DA1007A2301 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = B788403F27BD6DA1007A2301 /* SQLite */; };
+		B788404D27BD6DA1007A2301 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = B788404127BD6DA1007A2301 /* Charts */; };
+		B788404F27BD6DA1007A2301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71449B127B94B0A00C282E9 /* LaunchScreen.storyboard */; };
+		B788405027BD6DA1007A2301 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E20DB327BA76BA0087E4B4 /* TableViewCell.xib */; };
+		B788405127BD6DA1007A2301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71449AF27B94B0A00C282E9 /* Assets.xcassets */; };
+		B788405227BD6DA1007A2301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71449AC27B94B0900C282E9 /* Main.storyboard */; };
+		B788405D27BD8496007A2301 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = B788405C27BD8496007A2301 /* Reachability */; };
+		B7DD354327BD8C0A00984B5E /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD354227BD8C0A00984B5E /* ConnectionManager.swift */; };
+		B7DD354427BD8C0A00984B5E /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD354227BD8C0A00984B5E /* ConnectionManager.swift */; };
 		B7E20DB427BA76BA0087E4B4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E20DB227BA76BA0087E4B4 /* TableViewCell.swift */; };
 		B7E20DB527BA76BA0087E4B4 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E20DB327BA76BA0087E4B4 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -69,9 +72,10 @@
 		B71449C927B94B0B00C282E9 /* disconnectdD_ataCollectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disconnectdD_ataCollectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B71449F327B94BCA00C282E9 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		B71449F627B94C1A00C282E9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		B79AC50F27BBF4E20016F5A3 /* disconnectdDataCollector copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "disconnectdD\bataCollector copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B788405627BD6DA1007A2301 /* disconnectdDataCollector copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "disconnectdD\bataCollector copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B788405727BD6DA1007A2301 /* disconnectdDataCollector copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "disconnectdD\bataCollector copy2-Info.plist"; path = "/Users/user214504/Desktop/disconnectdD\bataCollector/disconnectdD\bataCollector copy2-Info.plist"; sourceTree = "<absolute>"; };
 		B79AC51027BBF4E20016F5A3 /* disconnectdDataCollector copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "disconnectdD\bataCollector copy-Info.plist"; path = "/Users/user214504/Desktop/disconnectdD\bataCollector/disconnectdD\bataCollector copy-Info.plist"; sourceTree = "<absolute>"; };
-		B79AC51127BC23930016F5A3 /* InternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnection.swift; sourceTree = "<group>"; };
+		B7DD354227BD8C0A00984B5E /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		B7E20DB227BA76BA0087E4B4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B7E20DB327BA76BA0087E4B4 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,8 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7144A1827B96E2400C282E9 /* SQLite in Frameworks */,
-				B79AC51527BC34640016F5A3 /* Charts in Frameworks */,
+				B788403A27BD6D3E007A2301 /* SQLite in Frameworks */,
+				B788403D27BD6D5C007A2301 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,11 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B79AC50527BBF4E20016F5A3 /* Frameworks */ = {
+		B788404B27BD6DA1007A2301 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79AC50627BBF4E20016F5A3 /* SQLite in Frameworks */,
+				B788404C27BD6DA1007A2301 /* SQLite in Frameworks */,
+				B788405D27BD8496007A2301 /* Reachability in Frameworks */,
+				B788404D27BD6DA1007A2301 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +126,7 @@
 				B71449A427B94B0900C282E9 /* Products */,
 				B71449EE27B94B4600C282E9 /* Frameworks */,
 				B79AC51027BBF4E20016F5A3 /* disconnectdDataCollector copy-Info.plist */,
+				B788405727BD6DA1007A2301 /* disconnectdDataCollector copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,7 +136,7 @@
 				B71449A327B94B0900C282E9 /* disconnectdDataCollector.app */,
 				B71449B927B94B0B00C282E9 /* disconnectdDataCollectorTests.xctest */,
 				B71449C327B94B0B00C282E9 /* disconnectdDataCollectorUITests.xctest */,
-				B79AC50F27BBF4E20016F5A3 /* disconnectdDataCollector copy.app */,
+				B788405627BD6DA1007A2301 /* disconnectdDataCollector copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +144,7 @@
 		B71449A527B94B0900C282E9 /* disconnectdDataCollector */ = {
 			isa = PBXGroup;
 			children = (
+				B7DD354527BDA26A00984B5E /* uiobjects */,
 				B71449F527B94C0400C282E9 /* objects */,
 				B71449F227B94B9500C282E9 /* Database */,
 				B71449A627B94B0900C282E9 /* AppDelegate.swift */,
@@ -186,11 +194,18 @@
 			isa = PBXGroup;
 			children = (
 				B71449F627B94C1A00C282E9 /* Event.swift */,
-				B7E20DB227BA76BA0087E4B4 /* TableViewCell.swift */,
-				B7E20DB327BA76BA0087E4B4 /* TableViewCell.xib */,
-				B79AC51127BC23930016F5A3 /* InternetConnection.swift */,
+				B7DD354227BD8C0A00984B5E /* ConnectionManager.swift */,
 			);
 			path = objects;
+			sourceTree = "<group>";
+		};
+		B7DD354527BDA26A00984B5E /* uiobjects */ = {
+			isa = PBXGroup;
+			children = (
+				B7E20DB227BA76BA0087E4B4 /* TableViewCell.swift */,
+				B7E20DB327BA76BA0087E4B4 /* TableViewCell.xib */,
+			);
+			path = uiobjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +225,8 @@
 			);
 			name = "disconnectdD\bataCollector";
 			packageProductDependencies = (
-				B7144A1727B96E2400C282E9 /* SQLite */,
-				B79AC51427BC34640016F5A3 /* Charts */,
+				B788403927BD6D3E007A2301 /* SQLite */,
+				B788403C27BD6D5C007A2301 /* Charts */,
 			);
 			productName = "disconnectdD\bataCollector";
 			productReference = B71449A327B94B0900C282E9 /* disconnectdDataCollector.app */;
@@ -253,13 +268,13 @@
 			productReference = B71449C327B94B0B00C282E9 /* disconnectdDataCollectorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		B79AC4FB27BBF4E20016F5A3 /* disconnectdDataCollector copy */ = {
+		B788403E27BD6DA1007A2301 /* disconnectdDataCollector copy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B79AC50C27BBF4E20016F5A3 /* Build configuration list for PBXNativeTarget "disconnectdDataCollector copy" */;
+			buildConfigurationList = B788405327BD6DA1007A2301 /* Build configuration list for PBXNativeTarget "disconnectdDataCollector copy" */;
 			buildPhases = (
-				B79AC4FE27BBF4E20016F5A3 /* Sources */,
-				B79AC50527BBF4E20016F5A3 /* Frameworks */,
-				B79AC50727BBF4E20016F5A3 /* Resources */,
+				B788404327BD6DA1007A2301 /* Sources */,
+				B788404B27BD6DA1007A2301 /* Frameworks */,
+				B788404E27BD6DA1007A2301 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -267,10 +282,12 @@
 			);
 			name = "disconnectdD\bataCollector copy";
 			packageProductDependencies = (
-				B79AC4FC27BBF4E20016F5A3 /* SQLite */,
+				B788403F27BD6DA1007A2301 /* SQLite */,
+				B788404127BD6DA1007A2301 /* Charts */,
+				B788405C27BD8496007A2301 /* Reachability */,
 			);
 			productName = "disconnectdD\bataCollector";
-			productReference = B79AC50F27BBF4E20016F5A3 /* disconnectdDataCollector copy.app */;
+			productReference = B788405627BD6DA1007A2301 /* disconnectdDataCollector copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -306,8 +323,9 @@
 			);
 			mainGroup = B714499A27B94B0900C282E9;
 			packageReferences = (
-				B7144A1627B96E2400C282E9 /* XCRemoteSwiftPackageReference "SQLite" */,
-				B79AC51327BC34640016F5A3 /* XCRemoteSwiftPackageReference "Charts" */,
+				B788403827BD6D3E007A2301 /* XCRemoteSwiftPackageReference "SQLite" */,
+				B788403B27BD6D5C007A2301 /* XCRemoteSwiftPackageReference "Charts" */,
+				B788405B27BD8496007A2301 /* XCRemoteSwiftPackageReference "Reachability.swift" */,
 			);
 			productRefGroup = B71449A427B94B0900C282E9 /* Products */;
 			projectDirPath = "";
@@ -316,7 +334,7 @@
 				B71449A227B94B0900C282E9 /* disconnectdDataCollector */,
 				B71449B827B94B0B00C282E9 /* disconnectdDataCollectorTests */,
 				B71449C227B94B0B00C282E9 /* disconnectdDataCollectorUITests */,
-				B79AC4FB27BBF4E20016F5A3 /* disconnectdDataCollector copy */,
+				B788403E27BD6DA1007A2301 /* disconnectdDataCollector copy */,
 			);
 		};
 /* End PBXProject section */
@@ -347,14 +365,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B79AC50727BBF4E20016F5A3 /* Resources */ = {
+		B788404E27BD6DA1007A2301 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79AC50827BBF4E20016F5A3 /* LaunchScreen.storyboard in Resources */,
-				B79AC50927BBF4E20016F5A3 /* TableViewCell.xib in Resources */,
-				B79AC50A27BBF4E20016F5A3 /* Assets.xcassets in Resources */,
-				B79AC50B27BBF4E20016F5A3 /* Main.storyboard in Resources */,
+				B788404F27BD6DA1007A2301 /* LaunchScreen.storyboard in Resources */,
+				B788405027BD6DA1007A2301 /* TableViewCell.xib in Resources */,
+				B788405127BD6DA1007A2301 /* Assets.xcassets in Resources */,
+				B788405227BD6DA1007A2301 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +388,7 @@
 				B71449F427B94BCA00C282E9 /* Database.swift in Sources */,
 				B7E20DB427BA76BA0087E4B4 /* TableViewCell.swift in Sources */,
 				B71449A927B94B0900C282E9 /* SceneDelegate.swift in Sources */,
-				B79AC51227BC23930016F5A3 /* InternetConnection.swift in Sources */,
+				B7DD354327BD8C0A00984B5E /* ConnectionManager.swift in Sources */,
 				B71449F727B94C1A00C282E9 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,16 +410,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B79AC4FE27BBF4E20016F5A3 /* Sources */ = {
+		B788404327BD6DA1007A2301 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79AC4FF27BBF4E20016F5A3 /* ViewController.swift in Sources */,
-				B79AC50027BBF4E20016F5A3 /* AppDelegate.swift in Sources */,
-				B79AC50127BBF4E20016F5A3 /* Database.swift in Sources */,
-				B79AC50227BBF4E20016F5A3 /* TableViewCell.swift in Sources */,
-				B79AC50327BBF4E20016F5A3 /* SceneDelegate.swift in Sources */,
-				B79AC50427BBF4E20016F5A3 /* Event.swift in Sources */,
+				B788404427BD6DA1007A2301 /* ViewController.swift in Sources */,
+				B788404527BD6DA1007A2301 /* AppDelegate.swift in Sources */,
+				B788404627BD6DA1007A2301 /* Database.swift in Sources */,
+				B788404727BD6DA1007A2301 /* TableViewCell.swift in Sources */,
+				B788404827BD6DA1007A2301 /* SceneDelegate.swift in Sources */,
+				B7DD354427BD8C0A00984B5E /* ConnectionManager.swift in Sources */,
+				B788404A27BD6DA1007A2301 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,7 +707,7 @@
 			};
 			name = Release;
 		};
-		B79AC50D27BBF4E20016F5A3 /* Debug */ = {
+		B788405427BD6DA1007A2301 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -697,7 +716,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9PQU4Y2GU7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "disconnectdD\bataCollector copy-Info.plist";
+				INFOPLIST_FILE = "disconnectdD\bataCollector copy2-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -716,7 +735,7 @@
 			};
 			name = Debug;
 		};
-		B79AC50E27BBF4E20016F5A3 /* Release */ = {
+		B788405527BD6DA1007A2301 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -725,7 +744,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9PQU4Y2GU7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "disconnectdD\bataCollector copy-Info.plist";
+				INFOPLIST_FILE = "disconnectdD\bataCollector copy2-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -783,11 +802,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B79AC50C27BBF4E20016F5A3 /* Build configuration list for PBXNativeTarget "disconnectdDataCollector copy" */ = {
+		B788405327BD6DA1007A2301 /* Build configuration list for PBXNativeTarget "disconnectdDataCollector copy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B79AC50D27BBF4E20016F5A3 /* Debug */,
-				B79AC50E27BBF4E20016F5A3 /* Release */,
+				B788405427BD6DA1007A2301 /* Debug */,
+				B788405527BD6DA1007A2301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -795,23 +814,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B7144A1627B96E2400C282E9 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+		B788403827BD6D3E007A2301 /* XCRemoteSwiftPackageReference "SQLite" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
 			};
 		};
-		B79AC4FD27BBF4E20016F5A3 /* XCRemoteSwiftPackageReference "SQLite" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		B79AC51327BC34640016F5A3 /* XCRemoteSwiftPackageReference "Charts" */ = {
+		B788403B27BD6D5C007A2301 /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts.git";
 			requirement = {
@@ -819,23 +830,57 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		B788404027BD6DA1007A2301 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+		B788404227BD6DA1007A2301 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		B788405B27BD8496007A2301 /* XCRemoteSwiftPackageReference "Reachability.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B7144A1727B96E2400C282E9 /* SQLite */ = {
+		B788403927BD6D3E007A2301 /* SQLite */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B7144A1627B96E2400C282E9 /* XCRemoteSwiftPackageReference "SQLite" */;
+			package = B788403827BD6D3E007A2301 /* XCRemoteSwiftPackageReference "SQLite" */;
 			productName = SQLite;
 		};
-		B79AC4FC27BBF4E20016F5A3 /* SQLite */ = {
+		B788403C27BD6D5C007A2301 /* Charts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B79AC4FD27BBF4E20016F5A3 /* XCRemoteSwiftPackageReference "SQLite" */;
-			productName = SQLite;
-		};
-		B79AC51427BC34640016F5A3 /* Charts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B79AC51327BC34640016F5A3 /* XCRemoteSwiftPackageReference "Charts" */;
+			package = B788403B27BD6D5C007A2301 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		B788403F27BD6DA1007A2301 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B788404027BD6DA1007A2301 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+		B788404127BD6DA1007A2301 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B788404227BD6DA1007A2301 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		B788405C27BD8496007A2301 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B788405B27BD8496007A2301 /* XCRemoteSwiftPackageReference "Reachability.swift" */;
+			productName = Reachability;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

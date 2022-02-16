@@ -11,55 +11,32 @@ import BackgroundTasks
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var window: UIWindow?
-    let backgroundAppDcDetectorTaskSchedulerIdentifier = "com.example.apple-samplecode.disconnectedDataCollector.dc_detector"
-    
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         checkBackgroundRefreshStatus()
-        registerBackgroundFetch()
+        UIApplication.shared.setMinimumBackgroundFetchInterval(UIApplication.backgroundFetchIntervalMinimum)
         return true
     }
     
-    private func registerBackgroundFetch() {
-        // Declared at the "Permitted background task scheduler identifiers" in info.plist
+    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        ConnectionManager.shared.observeReachability()
+        completionHandler(.newData)
         
-        BGTaskScheduler.shared.register(forTaskWithIdentifier: backgroundAppDcDetectorTaskSchedulerIdentifier, using: nil) { (task) in
-            print("BackgroundAppRefreshTaskScheduler is executed NOW!")
-            task.expirationHandler = {
-                print("Task expired")
-                task.setTaskCompleted(success: false)
-            }
-            print("Refreshing app in background. Time remaining: \(UIApplication.shared.backgroundTimeRemaining) s")
-            self.handleAppRefresh(task: task as! BGAppRefreshTask)
-        }
-    }
-        
-    func submitBackgroundTasks() {
-        // Declared at the "Permitted background task scheduler identifiers" in info.plist
-        do {
-            let backgroundAppRefreshTaskRequest = BGAppRefreshTaskRequest(identifier: backgroundAppDcDetectorTaskSchedulerIdentifier)
-            backgroundAppRefreshTaskRequest.earliestBeginDate = Date(timeIntervalSinceNow: 5)
-            try BGTaskScheduler.shared.submit(backgroundAppRefreshTaskRequest)
-            print("Submitted task request")
-        } catch {
-            print("Failed to submit BGTask: \(error)")
-        }
     }
     
-    func handleAppRefresh(task: BGAppRefreshTask) {
-        if let vc = window?.rootViewController as? ViewController {
-            if(!InternetConnection.isConnectedToNetwork()) {      
-                // Disconnect detected
-                print("disconnect detected")
-                task.setTaskCompleted(success: true)
-                vc.addEvent(event: Event())
-            } else {
-                task.setTaskCompleted(success: false)
-            }
-            submitBackgroundTasks()
-        }
+    
+    // MARK: UISceneSession Lifecycle
+
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        // Called when a new scene session is being created.
+        // Use this method to select a configuration to create the new scene with.
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
     private func checkBackgroundRefreshStatus() {
@@ -78,22 +55,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Unknown property")
         }
     }
-    
-    
-    // MARK: UISceneSession Lifecycle
-    
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-    
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-    
     
 }
 

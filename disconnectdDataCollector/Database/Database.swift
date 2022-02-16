@@ -52,6 +52,7 @@ class DB_Manager {
             // show error message if any
             print(error.localizedDescription)
         }
+        print("DB created successfully")
     }
     
     private func initAllEvents() {
@@ -109,7 +110,6 @@ class DB_Manager {
             for events in try db.prepare(eventsTable) {
                 do {
                     try eventList.append(Event(time: events.get(time),count: Int(events.get(count))))
-                    print("loadAllEvents: Event: time: \(try events.get(time)), count: \(try events.get(count))")
                 } catch {
                     print("loadAllEvents: Load event from db failed: \(error)")
                 }

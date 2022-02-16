@@ -8,15 +8,18 @@
 import UIKit
 import Charts
 
+let DisconnectNotficationKey = "com.example.disconnectedDataCollector.dc_detector"
 class ViewController: UIViewController, ChartViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var barChart: BarChartView!
     private var events: [Event] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        self.createObserver()
         DispatchQueue.global(qos: .userInitiated).async {
             self.events = DB_Manager.shared.loadAllEvents()     // Load events from db
             DispatchQueue.main.async {
@@ -39,15 +42,7 @@ class ViewController: UIViewController, ChartViewDelegate {
     
     func addEvent(event: Event) {
         DispatchQueue.global(qos: .userInitiated).async {
-            var index: Int = 0
-            for value in self.events {
-                if(value == event) {
-                    self.events[index].count+=1
-                    print("event updated, index: \(index)")
-                    DB_Manager.shared.insertEvent(event: value)
-                    index+=1
-                }
-            }
+            let index = self.addEventToDB(event: event)
             DispatchQueue.main.async {
                 self.tableView.beginUpdates()
                 let indexPath = IndexPath(item: index, section: 0)
@@ -56,6 +51,20 @@ class ViewController: UIViewController, ChartViewDelegate {
                 self.setupChart()
             }
         }
+    }
+    
+    func addEventToDB(event: Event) -> Int {
+        /**/
+        var index: Int = 0
+        for value in self.events {
+            if(value == event) {
+                self.events[index].count+=1
+                print("event updated, index: \(index)")
+                DB_Manager.shared.insertEvent(event: value)
+                index+=1
+            }
+        }
+        return index
     }
         
     // MARK: Visualizing Data
@@ -114,6 +123,21 @@ class ViewController: UIViewController, ChartViewDelegate {
         barChart.animate(yAxisDuration: 1.5 , easingOption: .easeOutBounce)
         
     }
+    // MARK: manage observer:
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func createObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateEvent(notfication:)), name: Notification.Name(DisconnectNotficationKey), object: nil)
+        
+    }
+    
+    @objc func updateEvent(notfication: NSNotification) {
+        addEvent(event: Event())
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource {

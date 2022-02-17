@@ -40,7 +40,7 @@ class ViewController: UIViewController, ChartViewDelegate {
         }
     }
     
-    func addEvent(event: Event) {
+    private func addEvent(event: Event) {
         DispatchQueue.global(qos: .userInitiated).async {
             let index = self.addEventToDB(event: event)
             DispatchQueue.main.async {
@@ -53,7 +53,7 @@ class ViewController: UIViewController, ChartViewDelegate {
         }
     }
     
-    func addEventToDB(event: Event) -> Int {
+    private func addEventToDB(event: Event) -> Int {
         /**/
         var index: Int = 0
         for value in self.events {
@@ -106,7 +106,7 @@ class ViewController: UIViewController, ChartViewDelegate {
             
     }
     
-    func setupChart() {
+    private func setupChart() {
         setupData()
         barChart.delegate = self
         // Hightlight
@@ -129,7 +129,7 @@ class ViewController: UIViewController, ChartViewDelegate {
         NotificationCenter.default.removeObserver(self)
     }
     
-    func createObserver() {
+    private func createObserver() {
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateEvent(notfication:)), name: Notification.Name(DisconnectNotficationKey), object: nil)
         
     }

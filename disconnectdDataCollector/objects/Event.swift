@@ -23,7 +23,6 @@ class Event: Identifiable, Equatable {
         setCurrentTime()
     }
     
-    
     private func setCurrentTime() {
         let formatter = DateFormatter()
         formatter.dateFormat = "hh"

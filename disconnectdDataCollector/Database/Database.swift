@@ -89,7 +89,6 @@ class DB_Manager {
         } catch {
             print("insertEvent failded: \(error)")
         }
-
     }
     
     public func clearEventsTable() {
@@ -101,7 +100,6 @@ class DB_Manager {
         } catch {
             print("deleteEventTable failded: \(error)")
         }
-        
     }
     
     public func loadAllEvents() -> [Event]{

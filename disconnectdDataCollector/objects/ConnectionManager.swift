@@ -13,6 +13,7 @@ class ConnectionManager {
     static let shared = ConnectionManager()
     private var reachability : Reachability!
     private var isObserverInitated = false
+    
     func observeReachability() {
         self.reachability = try! Reachability()
         if(!isObserverInitated) {
@@ -36,10 +37,10 @@ class ConnectionManager {
             break
         case .wifi:
             print("Network available via WiFi.")
+            notifyEvent()
             break
         case .unavailable:
             print("Network is  unavailable.")
-            notifyEvent()
             break
         }
     }
@@ -47,9 +48,5 @@ class ConnectionManager {
     func notifyEvent() {
         let name = Notification.Name(rawValue: DisconnectNotficationKey)
         NotificationCenter.default.post(name: name,object: nil)
-    }
-    
-    func cancelNetwork() {
-        
     }
 }
